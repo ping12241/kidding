@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <title>奇丁 kidding</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+
+  <body>
+    <!---導覽列--->
+    <header class="mx-auto">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-top mt-4 col-12 col-md-12">
+      <a class="navbar-brand logo col-6 col-md-4" href="index.html"><img src="img/logo.PNG"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-5 mt-5">
+          <li class="nav-item nav-box">
+            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item nav-box">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item nav-box">
+            <a class="nav-link" href="member.html">MEMBER</a>
+          </li>
+          <li class="nav-item nav-box dropdown">
+            <a class="nav-link dropdown-toggle" href="production-1.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTION
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="production-1.html">林錦 Kidding</a>
+              <a class="dropdown-item" href="production-2.html">ChouChou</a>
+              <a class="dropdown-item" href="production-3.html">喬小厚</a>
+            </div>
+          </li>
+          <li class="nav-item nav-box active">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    
+    <!---內容--->
+    <div class="contact mx-auto row no-gutters bg-dark justify-content-center align-items-center  col-12">
+      <div class="contact_in col-10 col-md-5 p-4"><img id="photo" src="img/Kidding.jpg"></div>    
+      <div class="contact_text col-10 col-md-7 pl-3 mt-3 text-white">
+        <form action="/get-data" method="post" onsubmit="submit_ok()">
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="object">聯絡對象</label>
+            <select class="form-control col-md-8" name="聯絡對象" id="object" onchange="changeimg()">
+              <option value="Kidding">林錦 Kidding</option>	
+              <option value="ChouChou">ChouChou</option>
+              <option value="Joe">喬小厚</option>
+            </select>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="name">名　字</label>
+            <input type="name" class="form-control col-md-8" id="name" name="name" required="required" placeholder="請輸入名字">
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="email">信　箱</label>
+            <input type="email" class="form-control col-md-8" id="email" name="email" required="required" placeholder="請輸入信箱">
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="phone">電　話</label>
+            <input type="phone" class="form-control col-md-8" id="phone" name="phone" required="required" placeholder="請輸入電話">
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="message">留　言</label>
+            <textarea class="form-control col-md-8" id="message" name="message" required="required" placeholder="請輸入內容" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-secondary mb-3">送出</button>
+          <button type="reset" class="btn btn-secondary mb-3">清除</button>
+          
+        </form>
+      </div>
+    </div>
+
+    <!---頁尾--->
+    <footer class="mx-auto">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="p-2 bd-highlight minlogo"><img src="img/logo.PNG"></div>
+        <div class="p-2 bd-highlight"><a>© 2020 created by 奇丁</a> </div>
+      </div>
+    </footer>
+    <script>
+    </script>
+    <script src="js/contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header,footer {
+    max-width: 1080px;
+    min-width: 1000px;
+}
+
+.wrapper {
+    max-width: 1080px;
+    min-width: 1000px;
+}
+
+.content {
+    width: 100%;
+    min-width: 1000px;
+    padding: 0 !important;
+}
+
+.logo img, .minlogo img, 
+.content_in img, .content_title img,
+.carousel_in img, .contact img,
+.box1 img {
+    width: 100%;
+}
+
+.navbar-light .navbar-toggler {
+    color: black;
+    background-color: white;
+}
+
+.nav-box {
+    width: 120px;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.active {
+    background-color: white;
+}
+
+.box {
+    width: 300px;
+    padding: 3px;
+}
+
+.box img {
+    width: 98%;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.box img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: -1px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.dropdown-menu a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer a {
+    color: white !important;
+}
+
+.minlogo {
+    width: 200px;
+}
+
+.carousel_text {
+    top: 0 !important;
+    margin-left: 310px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.carousel_text h5 {
+    line-height: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.carousel_text p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.contact {
+    max-width: 960px;
+}
+
+.contact_text form {
+    text-align: center;
+}
+
+.contact_text {
+    min-width: 500px;
+}
+
+.content_title {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.content_text_in {
+    margin-top: 20px;
+}
+
+.content_text_in h6 {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.box1 {
+    width: 250px;
+}
+
+@media screen and (max-width: 980px) {
+    header,footer {
+        min-width: 576px;
+    }
+    
+    .wrapper {
+        min-width: 576px;
+    }
+    
+    .content {
+        min-width: 576px;
+    }
+
+    .contact {
+        min-width: 576px;
+    }
+
+    .navbar-nav {
+        margin: 0 !important;
+    }
+
+    .nav-box {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        width: 44px;
+        height: 36px;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content_title {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+}
+  
+@media screen and (max-width: 768px) {
+    .content {
+        min-width: 576px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content_text_in {
+        margin-left: 0px;
+    }
+
+    .carousel-caption {
+        position: relative;
+        bottom: 20px;
+        left: -300px;
+    }
+
+    .carousel_text {
+        margin-left: 0px;
+    }
+
+    .carousel_text p {
+        font-size: 16px;
+    }
+}
